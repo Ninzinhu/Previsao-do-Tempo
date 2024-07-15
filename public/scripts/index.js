@@ -24,4 +24,10 @@ document.getElementById('loc').addEventListener('click', function() {
     } else {
       body.classList.add('noite');
     }
+
+    // Atualizar informações do tempo
+    document.getElementById('tempo-dados').innerText = `Condição: ${data.weather[0].description}`;
+    document.getElementById('weather-icon').src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+  })
+  .catch(error => console.error('Erro ao buscar os dados do tempo:', error));
 });
