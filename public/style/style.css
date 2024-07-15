@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  transition: background 0.5s ease;
+}
+
+body.ensolarado {
+  background: radial-gradient(circle at 50% 50%, #ffe259, #ffa751);
+  color: #333;
+}
+
+body.chovendo {
+  background: radial-gradient(circle at 50% 50%, #004e92, #000428);
+  color: #fff;
+}
+
+body.noite {
+  background: radial-gradient(circle at 50% 50%, #1e1e2f, #141420);
+  color: #fff;
+}
+
+main {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: inherit;
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+}
+
+#search-form form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#input-loc {
+  padding: 0.5rem;
+  border: 1px solid currentColor;
+  border-radius: 10px;
+  margin-right: 0.5rem;
+  background: transparent;
+  color: inherit;
+  outline: none;
+  transition: all 0.3s;
+}
+
+#input-loc:focus {
+  box-shadow: 0 0 10px currentColor;
+}
+
+#loc {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #00e6e6, #007a7a);
+  color: #000;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+#loc:hover {
+  background: linear-gradient(45deg, #007a7a, #00e6e6);
+  transform: scale(1.05);
+}
+
+#tempo-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 1s ease-in-out 0.5s forwards;
+  opacity: 0;
+}
+
+.tempo-dados {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  #input-loc, #loc {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  #search-form form {
+    flex-direction: column;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
