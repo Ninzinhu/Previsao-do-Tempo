@@ -1,9 +1,9 @@
-const path = require('path');
+const path = require("path");
 
 module.exports = {
-  entry: './scritps/index.js',
+  entry: "./scripts/index.js",
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'my-first-webpack.bundle.js',
+    path: path.resolve(__dirname, "dist"),
+    filename: "bundle.js",
   },
 };
