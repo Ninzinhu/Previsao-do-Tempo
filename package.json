@@ -10,5 +10,9 @@
   "description": "",
   "devDependencies": {
     "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "webpack": "^5.93.0",
+    "webpack-cli": "^5.1.4"
   }
 }
