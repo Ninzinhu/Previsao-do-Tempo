@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Previsão do Tempo</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Previsão do Tempo</title>
+  </head>
+  <body>
+    <main>
+      <h1>Codições do Tempo</h1>
 
-  <script src="/public/scripts/index.js"></script>
-  
-</body>
+      <section id="search-form">
+        <form>
+          <input type="text" id="input-loc" />
+          <button id="loc">Pesquisar</button>
+        </form>
+      </section>
+
+      <section id="tempo-info">
+        <div class="tempo-dados"></div>
+
+        <img src="https://openweathermap.org/img/wn/02d@2x.png">
+
+
+      </section>
+    </main>
+
+    <script src="/public/scripts/index.js"></script>
+  </body>
 </html>
