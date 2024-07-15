@@ -12,4 +12,16 @@ document.getElementById('loc').addEventListener('click', function() {
 
     // Resetar classes do body
     body.className = '';
+
+
+     // Adicionar classe baseada no tempo
+     if (weather.includes('sun')) {
+      body.classList.add('ensolarado');
+    } else if (weather.includes('rain')) {
+      body.classList.add('chovendo');
+    } else if (weather.includes('night')) {
+      body.classList.add('noite');
+    } else {
+      body.classList.add('noite');
+    }
 });
