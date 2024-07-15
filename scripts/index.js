@@ -27,10 +27,11 @@ form === null || form === void 0 ? void 0 : form.addEventListener("submit", (eve
             alert("Localização não encontrada");
             return;
         }
+        const temperaturaCelsius = (dados.main.temp - 273.15).toFixed(1);
         const infos = {
-            temperatura: Math.round(dados.main.temp), // Correção aqui, deve ser 'temp' e não 'temperatura'
+            temperatura: temperaturaCelsius,
             local: dados.name,
-            icone: `https://openweathermap.org/img/wn/${dados.weather[0].icon}@2x.png`, // Correção aqui
+            icone: `https://openweathermap.org/img/wn/${dados.weather[0].icon}@2x.png`,
         };
         if (sectionTempoInfo) {
             sectionTempoInfo.innerHTML = `
