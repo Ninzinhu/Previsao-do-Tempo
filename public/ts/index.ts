@@ -29,11 +29,15 @@ form?.addEventListener("submit", async (event) => {
       icone: `https://openweathermap.org/img/wn/${dados.weather[0].icon}@2x.png`,  // Correção aqui
     };
 
-    sectionTempoInfo.innerHTML = `
-      <p>Local: ${infos.local}</p>
-      <p>Temperatura: ${infos.temperatura}°C</p>
-      <img src="${infos.icone}" alt="Ícone do tempo">
-    `;
+    if (sectionTempoInfo) {
+      sectionTempoInfo.innerHTML = `
+        <p>Local: ${infos.local}</p>
+        <p>Temperatura: ${infos.temperatura}°C</p>
+        <img src="${infos.icone}" alt="Ícone do tempo">
+      `;
+    } else {
+      console.error("Elemento 'sectionTempoInfo' não encontrado.");
+    }
   } catch (error) {
     console.error("Erro ao buscar informações do tempo:", error);
     alert("Ocorreu um erro ao buscar as informações do tempo. Tente novamente mais tarde.");

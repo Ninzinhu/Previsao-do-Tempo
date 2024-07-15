@@ -1,4 +1,4 @@
-
+"use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -9,16 +9,42 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 const form = document.querySelector("#search-form > form");
-const input = document.querySelector("input-loc");
-form === null || form === void 0 ? void 0 : form.addEventListener('submit', (event) => __awaiter(void 0, void 0, void 0, function* () {
+const input = document.querySelector("#input-loc");
+const sectionTempoInfo = document.querySelector("#tempo-info");
+form === null || form === void 0 ? void 0 : form.addEventListener("submit", (event) => __awaiter(void 0, void 0, void 0, function* () {
     event.preventDefault();
     if (!input)
         return;
     const localizacao = input.value;
     if (localizacao.length < 3) {
-        alert('O local precisa ter pelo menos 3 letras');
+        alert("O local precisa ter pelo menos 3 letras");
         return;
     }
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${localizacao}&appid=b187af6e8555c121214527c3c808a72e
-&lang=pt_br`);
+    try {
+        const response = yield fetch(`https://api.openweathermap.org/data/2.5/weather?q=${localizacao}&appid=133c6feb100c12c50f6e62e50ba7d89c&lang=pt_br`);
+        const dados = yield response.json();
+        if (dados.cod !== 200) {
+            alert("Localização não encontrada");
+            return;
+        }
+        const infos = {
+            temperatura: Math.round(dados.main.temp), // Correção aqui, deve ser 'temp' e não 'temperatura'
+            local: dados.name,
+            icone: `https://openweathermap.org/img/wn/${dados.weather[0].icon}@2x.png`, // Correção aqui
+        };
+        if (sectionTempoInfo) {
+            sectionTempoInfo.innerHTML = `
+        <p>Local: ${infos.local}</p>
+        <p>Temperatura: ${infos.temperatura}°C</p>
+        <img src="${infos.icone}" alt="Ícone do tempo">
+      `;
+        }
+        else {
+            console.error("Elemento 'sectionTempoInfo' não encontrado.");
+        }
+    }
+    catch (error) {
+        console.error("Erro ao buscar informações do tempo:", error);
+        alert("Ocorreu um erro ao buscar as informações do tempo. Tente novamente mais tarde.");
+    }
 }));
