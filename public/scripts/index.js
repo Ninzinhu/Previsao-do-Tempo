@@ -9,4 +9,7 @@ document.getElementById('loc').addEventListener('click', function() {
   const weather = data.weather[0].main.toLowerCase();
   const body = document.body;
 
+
+    // Resetar classes do body
+    body.className = '';
 });
