@@ -9,13 +9,13 @@
 <h1 align="center">Time Weather</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/{{YOUR_GITHUB_USERNAME}}/time-weather?color=56BEB8">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/{{Ninzinhu}}/time-weather?color=56BEB8">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/{{YOUR_GITHUB_USERNAME}}/time-weather?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/{{Ninzinhu}}/time-weather?color=56BEB8">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/{{YOUR_GITHUB_USERNAME}}/time-weather?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/{{Ninzinhu}}/time-weather?color=56BEB8">
 
-  <img alt="License" src="https://img.shields.io/github/license/{{YOUR_GITHUB_USERNAME}}/time-weather?color=56BEB8">
+  <img alt="License" src="https://img.shields.io/github/license/{{Ninzinhu}}/time-weather?color=56BEB8">
 
   <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/{{YOUR_GITHUB_USERNAME}}/time-weather?color=56BEB8" /> -->
 
@@ -26,11 +26,11 @@
 
 <!-- Status -->
 
-<!-- <h4 align="center"> 
+ <h4 align="center"> 
 	🚧  Time Weather 🚀 Under construction...  🚧
 </h4> 
 
-<hr> -->
+<hr> 
 
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
@@ -46,14 +46,14 @@
 
 ## :dart: About ##
 
-Describe your project
+Project using the openweather API. Used as weather check.
 
 ## :sparkles: Features ##
 
 :heavy_check_mark: Feature 1;\
-:heavy_check_mark: Feature 2;\
+<!--- >:heavy_check_mark: Feature 2;\
 :heavy_check_mark: Feature 3;
-
+<-->
 ## :rocket: Technologies ##
 
 The following tools were used in this project:
@@ -72,7 +72,7 @@ Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) an
 
 ```bash
 # Clone this project
-$ git clone https://github.com/{{YOUR_GITHUB_USERNAME}}/time-weather
+$ git clone https://github.com/{{Ninzinhu}}/time-weather
 
 # Access
 $ cd time-weather
@@ -91,7 +91,7 @@ $ yarn start
 This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
 
 
-Made with :heart: by <a href="https://github.com/{{YOUR_GITHUB_USERNAME}}" target="_blank">{{YOUR_NAME}}</a>
+Made with :heart: by <a href="https://github.com/{{YOUR_GITHUB_USERNAME}}" target="_blank">{{Ninzinhu}}</a>
 
 &#xa0;
 
