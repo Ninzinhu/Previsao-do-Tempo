@@ -9,7 +9,7 @@
 <h1 align="center">Time Weather</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/Ninzinhu/time-weather?color=56BEB8">
+  <!-- <img alt="Github top language" src="https://img.shields.io/github/languages/top/Ninzinhu/time-weather?color=56BEB8"> -->
 
   <img alt="Github language count" src="https://img.shields.io/github/languages/count/Ninzinhu/Previsao-do-Tempo?color=56BEB8">
 
@@ -19,9 +19,9 @@
 
   <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/{{YOUR_GITHUB_USERNAME}}/time-weather?color=56BEB8" /> -->
 
-  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/{{YOUR_GITHUB_USERNAME}}/time-weather?color=56BEB8" /> -->
+  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/Ninzinhu/Previsao-do-Tempo?color=56BEB8" /> -->
 
-  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/{{YOUR_GITHUB_USERNAME}}/time-weather?color=56BEB8" /> -->
+  <img alt="Github stars" src="https://img.shields.io/github/stars/Ninzinhu/Previsao-do-Tempo?color=56BEB8" />
 </p>
 
 <!-- Status -->
