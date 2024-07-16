@@ -11,11 +11,11 @@
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/Ninzinhu/time-weather?color=56BEB8">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/Ninzinhu/time-weather?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/Ninzinhu/Previsao-do-Tempo?color=56BEB8">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Ninzinhu/time-weather?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Ninzinhu/Previsao-do-Tempo?color=56BEB8">
 
-  <img alt="License" src="https://img.shields.io/github/license/Ninzinhu/time-weather?color=56BEB8">
+  <img alt="License" src="https://img.shields.io/github/license/Ninzinhu/Previsao-do-Tempo?color=56BEB8">
 
   <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/{{YOUR_GITHUB_USERNAME}}/time-weather?color=56BEB8" /> -->
 
