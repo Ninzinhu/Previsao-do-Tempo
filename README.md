@@ -1,5 +1,5 @@
 <div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="Time Weather" />
+  <img src="preview.png" alt="Time Weather" />
 
   &#xa0;
 
@@ -50,7 +50,7 @@ Project using the openweather API. Used as weather check.
 
 ## :sparkles: Features ##
 
-:heavy_check_mark: Feature 1;\
+:heavy_check_mark:  Check the weather in your city
 <!--- >:heavy_check_mark: Feature 2;\
 :heavy_check_mark: Feature 3;
 <-->
@@ -58,11 +58,8 @@ Project using the openweather API. Used as weather check.
 
 The following tools were used in this project:
 
-- [Expo](https://expo.io/)
-- [Node.js](https://nodejs.org/en/)
-- [React](https://pt-br.reactjs.org/)
-- [React Native](https://reactnative.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
+
+- [Java](https://www.javacriptlang.org/)
 
 ## :white_check_mark: Requirements ##
 
@@ -75,13 +72,8 @@ Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) an
 $ git clone https://github.com/Ninzinhu/Previsao-do-Tempo
 
 # Access
-$ cd time-weather
+$ go live
 
-# Install dependencies
-$ yarn
-
-# Run the project
-$ yarn start
 
 # The server will initialize in the <http://localhost:3000>
 ```
