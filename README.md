@@ -59,7 +59,7 @@ Project using the openweather API. Used as weather check.
 The following tools were used in this project:
 
 
-- [Java](https://www.javacriptlang.org/)
+- [JavaScript](https://www.javacriptlang.org/)
 
 ## :white_check_mark: Requirements ##
 
